@@ -1,0 +1,14 @@
+version: "3.7"
+services:
+  employee-manager:
+    build: .
+    restart: always
+    ports:
+      - 8080:8080
+    depends_on:
+      - gateway-mongodb
+  gateway-mongodb:
+    image: "mongo:4.2.7"
+    restart: always
+    ports:
+      - 27017:27017

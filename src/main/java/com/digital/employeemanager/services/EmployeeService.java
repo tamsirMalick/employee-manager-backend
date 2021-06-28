@@ -3,7 +3,6 @@ package com.digital.employeemanager.services;
 import com.digital.employeemanager.domain.Employee;
 import com.digital.employeemanager.execption.EmployeeException;
 import com.digital.employeemanager.repositories.EmployeeRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -16,7 +15,6 @@ public class EmployeeService {
 
     private final EmployeeRepository employeeRepository;
 
-    @Autowired
     public EmployeeService(EmployeeRepository employeeRepository) {
         this.employeeRepository = employeeRepository;
     }
