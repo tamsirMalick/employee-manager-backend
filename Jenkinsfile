@@ -2,7 +2,7 @@ pipeline {
   agent any
   
   tools {
-    maven "Maven_3.8.4"
+    maven "Maven.3.8.4"
   }
   stages {
     stage('Clean Package') {
